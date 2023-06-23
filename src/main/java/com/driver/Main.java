@@ -5,18 +5,18 @@ public class Main {
    public static void main(String[] args) {
         B b=new B();
      b.meth();
-      System.out.println(b.meth());
+      // System.out.println(b.meth());
     }
     
 }
-class A{
+static class A{
     public String meth(){
         
         return "Invoking method from class A";
     }
     
 }
-class B extends A{
+static class B extends A{
     
     public String meth(){
         A a=new A();
